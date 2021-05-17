@@ -1,0 +1,29 @@
+@use './styleHelper/' as *;
+@use './components' as *;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: $mainFont;
+    background: $first
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input[type="submit"]{
+    cursor: pointer;
+}

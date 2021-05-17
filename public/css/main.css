@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 15vh;
+}
+.main-header .nav-icon {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 1;
+  left: 5%;
+  width: 6vmin;
+  height: 6vmin;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #D68D3C;
+}
+.main-header .nav-icon i {
+  color: #2B293E;
+  font-size: 3vmin;
+}
+.main-header h1 {
+  width: 70%;
+  font-size: 6vmin;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: #D68D3C;
+}
+
+.main-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background: #D68D3C;
+  display: none;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.main-nav ul {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.main-nav ul li {
+  width: 100%;
+  position: relative;
+}
+.main-nav ul li .nav-link {
+  position: absolute;
+  width: 100%;
+  padding: 2rem 1rem;
+  font-size: 3.5vmin;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+}
+.main-nav ul li .nav-link:hover {
+  background: #2B293E;
+  color: #D68D3C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  background: #2B293E;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

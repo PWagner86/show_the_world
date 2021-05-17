@@ -1,0 +1,31 @@
+@use '../styleHelper/' as *;
+
+.main-header{
+    @include flex(space-between, center, row);
+    height: 15vh;
+
+    .nav-icon{
+        margin-left: 2rem;
+        @include flex(center, center, row);
+        z-index: 1;
+        left: 5%;
+        width: 6vmin;
+        height: 6vmin;
+        cursor: pointer;
+        border-radius: 50%;
+        background: $fifth;
+
+        i{
+            color: $first;
+            font-size: 3vmin;
+        }
+    }
+
+    h1{
+        width: 70%;
+        font-size: 6vmin;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        color: $fifth;
+    }
+}
