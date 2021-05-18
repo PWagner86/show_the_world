@@ -1,7 +1,9 @@
 const navBtn = document.querySelector(".nav-icon") as HTMLDivElement;
 const navIcon = document.querySelector(".nav-icon i") as HTMLElement;
 const nav = document.querySelector("nav") as HTMLElement;
-let active: boolean = false
+let active: boolean = false;
+
+const createBtn = document.querySelector(".create-post") as HTMLButtonElement;
 
 navBtn.addEventListener("click", () => {
     if(!active){

@@ -3,6 +3,7 @@ const navBtn = document.querySelector(".nav-icon");
 const navIcon = document.querySelector(".nav-icon i");
 const nav = document.querySelector("nav");
 let active = false;
+const createBtn = document.querySelector(".create-post");
 navBtn.addEventListener("click", () => {
     if (!active) {
         nav.style.display = "flex";

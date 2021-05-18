@@ -1,0 +1,47 @@
+@use '../styleHelper/' as *;
+
+.posts{
+    height: 85vh;
+    background: $third;
+    overflow-x: auto;
+    position: relative;
+
+    .post{
+        height: 30rem;
+        @include flex(space-around, center, column);
+        box-shadow: 0 2px 6px black;
+
+        h3{
+            font-size: 2rem;
+        }
+
+        img{
+            height: 60%;
+            width: auto;
+        }
+
+        .like-container{
+            width: 100%;
+            @include flex(center, center, row);
+
+            i{
+                font-size: 1.3rem;
+                padding: 0 5rem;
+
+                p{
+                    font-family: $mainFont;
+                    padding: 0.5rem 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .noshow{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+    }
+}

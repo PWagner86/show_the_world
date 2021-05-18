@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+
+    <%- include('./partials/header.ejs') %>
+
+    <%- include('./partials/navigation.ejs') %>
+
+    <article class="form-wrapper">
+        <form action="/posts" method="POST">
+            <label for="title">
+                Title:
+                <input type="text" name="title" required>
+            </label>
+            <label for="name">
+                Your Name:
+                <input type="text" name="name" required>
+            </label>
+            <label for="image">
+                Enter Image URL:
+                <input type="text" name="image" required>
+            </label>
+            <button class="create-post">Create Post</button>
+        </form>
+    </article>
+
+</body>
+</html>

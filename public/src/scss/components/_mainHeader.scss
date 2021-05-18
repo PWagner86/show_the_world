@@ -7,17 +7,17 @@
     .nav-icon{
         margin-left: 2rem;
         @include flex(center, center, row);
-        z-index: 1;
+        z-index: 2;
         left: 5%;
-        width: 6vmin;
-        height: 6vmin;
+        width: 3rem;
+        height: 3rem;
         cursor: pointer;
         border-radius: 50%;
         background: $fifth;
 
         i{
             color: $first;
-            font-size: 3vmin;
+            font-size: 2rem;
         }
     }
 

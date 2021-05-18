@@ -9,5 +9,25 @@
 
     <%- include('./partials/navigation.ejs') %>
 
+    <article class="posts">
+
+        <% if(posts.length > 0){ %> 
+            <% posts.forEach(post => { %> 
+                <div class="post">
+                    <h3><%= post.title %></h3>
+                    <img src="<%= post.pic %>" alt="posted image">
+                    <div class="like-container">
+                        <i class="up far fa-thumbs-up"><p>1</p></i>
+                        <i class="down far fa-thumbs-down"><p>0</p></i>
+                    </div>
+                    <p>Posted from <strong><%= post.name %></strong> on <%= post.createdAt %></p>
+                </div>
+            <% }) %> 
+        <% }else{ %>
+            <p class="noshow">There are no posts to display...</p>
+        <% } %> 
+
+    </article>
+
 </body>
 </html>

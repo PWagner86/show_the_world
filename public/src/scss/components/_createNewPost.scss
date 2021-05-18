@@ -1,0 +1,52 @@
+@use '../styleHelper/' as *;
+
+.form-wrapper{
+    height: 85vh;
+    @include flex(center, center, row);
+    background: $third;
+
+    form{
+        // height: 90%;
+        width: 80vmin;
+        @include flex(center, center, column);
+        border: solid 3px $first;
+        border-radius: 5px;
+
+        label{
+            width: 90%;
+            @include flex(center, flex-start, column);
+            padding: 1rem 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: $first;
+
+            input{
+                width: 100%;
+                margin: 1rem 0;
+                font-size: 1.3rem;
+                padding: 0.5rem 0;
+                border: solid 3px $first;
+                border-radius: 5px;
+                background: none;
+            }
+        }
+
+        .create-post{
+            width: 90%;
+            font-size: 1.3rem;
+            padding: 0.5rem 0;
+            margin: 1rem 0;
+            border: solid 3px $first;
+            border-radius: 5px;
+            background: none;
+            font-weight: bold;
+            color: $first;
+            transition: ease-in-out 0.3s;
+
+            &:hover{
+                color: $fifth;
+                background: $first;
+            }
+        }
+    }
+}
